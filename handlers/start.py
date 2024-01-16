@@ -22,5 +22,5 @@ async def anketa_start_button(message: types.Message):
 
 
 def register_anketa_start_handlers(dp: Dispatcher):
-    dp.register_message_handler(anketa_start_button, commands=['Go'])
+    dp.register_message_handler(anketa_start_button, commands=['go', 'start'])
 

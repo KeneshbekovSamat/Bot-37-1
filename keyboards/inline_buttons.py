@@ -7,13 +7,13 @@ from aiogram.types import (
 async def anketa_start_keyboard():
     markup = InlineKeyboardMarkup()
     questionnaire_button = InlineKeyboardButton(
-        "Registration",
+        "Questionnaire",
         callback_data="start_questionnaire"
     )
     markup.add(questionnaire_button)
     return markup
 
-async def anketa_first_answers():
+async def questionnaire_first_answers():
     markup = InlineKeyboardMarkup()
     films_button = InlineKeyboardButton(
         "Films 🎞",
