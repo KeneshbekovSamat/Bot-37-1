@@ -10,7 +10,12 @@ async def anketa_start_keyboard():
         "Questionnaire",
         callback_data="start_questionnaire"
     )
+    registration_button = InlineKeyboardButton(
+        "Start Registration ",
+        callback_data="registration"
+    )
     markup.add(questionnaire_button)
+    markup.add(registration_button)
     return markup
 
 async def questionnaire_first_answers():
